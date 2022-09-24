@@ -11,7 +11,7 @@ resource "aws_db_instance" "db-instance" {
   db_subnet_group_name   = aws_db_subnet_group.rds-db.id
   engine                 = "mysql"
   engine_version         = "8.0.28"
-  instance_class         = "t2.micro"
+  instance_class         = "db.t2.micro"
   multi_az               = true
   db_name                = "mydb"
   username               = "username"
