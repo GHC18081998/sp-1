@@ -27,7 +27,7 @@ resource "aws_instance" "web-2" {
 # Creating 3rd EC2 instance in Private Subnet
 resource "aws_instance" "db" {
   ami                    = "ami-026b57f3c383c2eec"
-  instance_type          = "t3.micro"
+  instance_type          = "t2.micro"
   key_name               = "terraform"
   vpc_security_group_ids = ["${aws_security_group.db-sg.id}"]
   subnet_id              = aws_subnet.db-pvt-sub-1.id
