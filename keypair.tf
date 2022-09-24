@@ -1,6 +1,6 @@
 # creating key-pair to attach ec2 instance
 resource "aws_key_pair" "key-pair" {
-  key_name   = "test"
+  key_name   = "test1"
   public_key = tls_private_key.rsa.public_key_openssh
 
 }
